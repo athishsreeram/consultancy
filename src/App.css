@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.App-header li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.App-header li:last-child {
+  margin-right: 0;
+}
+
+.App-header a {
+  text-decoration: none;
+  font-family: Arial, sans-serif; /* Use a Google-like font */
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+.App-header a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #007bff; /* Add a line under the text */
+  transform: scaleX(0); /* Hide the line by default */
+  transition: transform 0.2s ease-in-out;
+}
+
+.App-header a:hover {
+  color: #007bff; /* Change text color on hover */
+}
+
+.App-header a:hover::before {
+  transform: scaleX(1); /* Show the line under the text on hover */
+}
+
+

@@ -1,0 +1,57 @@
+/* Center the row */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add a gap between columns */
+  }
+  
+  /* Make the columns responsive */
+  .column {
+    flex: 1; /* Allow columns to grow equally to fill the available space */
+    max-width: 300px; /* Set a maximum width for each column */
+  }
+  
+  /* Optional: Add additional styling to the cards for better appearance */
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+  
+  .card h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .card p {
+    margin: 0;
+    color: #555;
+  }
+  
+  /* Media Query: Adjust the column layout on smaller screens */
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column; /* Stack columns on top of each other */
+      align-items: center; /* Center columns horizontally */
+    }
+    .column {
+      max-width: 100%; /* Take up full width of the container */
+    }
+  }
+  
+  .card button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
